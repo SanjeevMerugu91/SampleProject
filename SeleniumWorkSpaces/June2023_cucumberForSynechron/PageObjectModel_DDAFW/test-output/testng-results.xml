@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="103381" started-at="2023-06-28T06:56:53Z" finished-at="2023-06-28T06:58:36Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@43bd930a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="103381" started-at="2023-06-28T06:56:53Z" finished-at="2023-06-28T06:58:36Z">
+      <class name="testRunner.TestRunner">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.TestRunner@43bd930a]" name="setUpClass" is-config="true" duration-ms="8236" started-at="2023-06-28T06:56:53Z" finished-at="2023-06-28T06:57:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@63f9b562]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@43bd930a]" name="runScenario" duration-ms="32927" started-at="2023-06-28T06:57:01Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-28T06:57:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add an item to cart from furniture department"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add an item to cart"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@43bd930a]" name="runScenario" duration-ms="29167" started-at="2023-06-28T06:57:34Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-28T06:58:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add an item to cart from furniture department"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add an item to cart"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@43bd930a]" name="runScenario" duration-ms="26701" started-at="2023-06-28T06:58:03Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-28T06:58:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add an item to cart from furniture department"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add an item to cart"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunner.TestRunner@43bd930a]" name="tearDownClass" is-config="true" duration-ms="6283" started-at="2023-06-28T06:58:30Z" finished-at="2023-06-28T06:58:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

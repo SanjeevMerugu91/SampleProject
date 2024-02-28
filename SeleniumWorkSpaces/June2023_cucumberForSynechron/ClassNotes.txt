@@ -1,0 +1,335 @@
+Selenium
+----------
+
+OpenSource
+WebApplications-AutoIT, Sikuli, Robot
+Functional and Regression Testing tool
+www.selenium.dev
+
+Selenium suite components
+----------------------------
+1. Selenium IDE -mozilla,chrome
+2. Selenium RC - 2 tier Arch -client/server Arch
+3. Selenium WebDriver ***** , protractor-Angularjs
+4. Selenium Grid -parallely
+5. Appium 
+6. Winium -Desktop application
+
+Cross Browser testing tool
+
+Java,C#,PHP, Javascripts, python,bluescripts etc...
+
+CoreJava
+-----------
+
+Junit/TestNG -TDD - Test Driven Development - Regression 
+Cucumber - BDD - Behavioural Driven Development -Acceptence Testing
+(Cucumber + Junit/TestNG =Regression Testing )
+
+
+TestNG - Test Next Generation ***
+
+@Test, testng.xml, Assertions- HardAssert/SoftAssert
+
+
+Assertions - is a feature to compare expected values with actual values --matching-pass, mis-matching-Fail
+
+2 types of Assertions 
+
+1. Hard assert
+2. Soft Assert
+
+ExpImgs = 10 
+ActImgs = 12;
+
+
+amazon.com
+
+Ts: Add an item to cart
+
+Tc01: Add an item to cart from furniture department
+
+openBrowser
+Enter url
+click on Todaysdeal
+select "furniture" checkbox
+click on first item 
+click on first item in sublist
+click on add2cart
+verify sucessmsg
+closeBrowser
+
+Tc02: Add an item to cart from menswatches department
+
+openBrowser
+Enter url
+click on Todaysdeal
+select "menswatches" checkbox
+click on first item 
+click on first item in sublist
+click on add2cart
+verify sucessmsg
+closeBrowser
+
+
+Tc02: Add an item to cart from ToysAndGames department
+
+openBrowser
+Enter url
+click on Todaysdeal
+select "ToysAndGames" checkbox
+click on first item 
+click on first item in sublist
+click on add2cart
+verify sucessmsg
+closeBrowser
+
+
+Locators
+------------
+1. id
+2. name
+3. Css
+4. xpath
+5. classname
+6. tagname
+7. linktext
+8. partiallinktext
+
+
+casestudy1: In amazon.com print all checkboxes text
+
+casestudy2:msn.com--> Tabs and windows --->click on flipkart in mainwindow--->Enter text in one of the element in tabwindow
+                                 close tab window--->in main window you need to click findtutor
+
+Shadow Root --structure
+
+
+javascriptExecutor(I)
+------------------------
+
+
+
+1. Work arround for most of the selenium actions
+2. Overlap of objects - Element not interatable exception 
+3. shadow root elements
+4. scroll up and scroll down 
+
+
+id, css
+
+document object
+window object
+
+
+document.getElementById('login1').value='admin';
+document.getElementById('password').value='manager';
+document.querySelector('body > div > div.lft_wrap > div.top_bar > div:nth-child(2) > form > div.floatL.leftwidth > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > input.signinbtn').click();
+
+
+CheckList-Day2
+-----------------
+1. Intro cucumber..
+2. Gherkins language...
+3. user stories...
+4. cucumber environment setup...
+5. Terminologies we use in cucumber...
+6. feature feature file....
+7. stepDefination file...
+8. TestRunner...
+9. passing parameter to step defination...
+10. datatable...
+11. datadriventest / parameterization....
+12. Hooks
+13. tags
+14. Generate reports - Extent spark reports, pdf reports
+
+
+Gherkins Language - Given,When, Then, And,But
+-----------------------------------------------
+
+1. Scenario: BDD, we called testcase as scenario
+
+2. Feature: collection of Scenarios 
+
+
+Feature: Login into Gmail
+
+Scenario: Login into gmail with valid credentials
+
+
+Scenario: Login into gmail with invalid credentials
+
+
+
+Scenario: Login into gmail with valid credentials
+
+Given user is in the loginpage for gmail
+When user enter valid username and password
+And clicks on signin
+Then sucessfully login should happen
+
+Given ---> pre status of an aplication to complete that scenario
+When-----> user actions should be mentioned to complete that scenario( user i/p should be mentioned inthe  when)
+And -----> to concatenate two actions
+Then----> expected results wil be mentioned in the Then key word
+
+
+Scenario: Login into gmail with invalid credentials
+
+Given user is in the login page for gmail
+When user enter invalid username and password
+And clicks on sigin
+Then error msg should be displayed
+But should not login into application
+
+
+
+Scenario: compose a mail in gmail application
+
+Given user is in the composemail page
+When user enter To,Cc,Bcc, Subject , content 
+And attachfile 
+And click on send button
+Then successfully mail should be sent
+
+
+Feature: cc payment
+Scenario: Make minimum due payment for cc
+Scenario: Make full due payment for cc
+Scenario: Make other due payment for cc
+
+Scenario: Make minimum due payment for cc
+
+Given user is on pay credit card page
+When user fills all details and select miniumum amount option
+And clicks on pay button
+Then credit card information page should be displayed
+And show successmsg
+
+
+Feature: Add an item to cart
+
+Scenaro: Add an furniture itemt to cart
+
+Given user is in furniture item page
+When user select the furnitire item option and select an item
+And click on add to cart
+Then sucessmsg should be displayed
+
+Scenario: Tag an image to friend
+
+
+ 
+Feature is a collection of scenarios
+Feature File: is a file where we add scenarios
+
+stepDefination file: it is file where we define each step in scenario with respect to selenium
+
+
+
+Cucucmber setup Environment
+------------------------------
+1. JDK installation and configured
+2. elipse with testng plugin
+3. plugin for cucumber -natural plugin/ cucumber plugin
+4. create maven project --- 2 dependencies---> cucumber-java, cucumber-Testng, Testng
+
+
+
+3 Files
+--------
+1. Feature File
+2. StepDefination file
+3. TestRunner
+
+DataTable
+
+CheckList
+----------
+Work with Excel
+parameterize from excel
+Tags
+hooks
+Generate Reports
+
+
+jxls
+BufferedFile
+Apache POI jars+ customized jar( ShineXls.jar )
+
+
+1. Associate your meven project with poi jars
+
+
+Hooks
+------
+@Before
+@After
+@BeforeAll
+@AfterAll
+@BeforeStep
+@AfterStep
+
+
+CheckList-Day3
+--------------
+
+Generate Extent spark reports and pdf reports...
+
+Cucumber + selenium + testng = Regression testing --amazon.com
+Introduction pageObjectModel -FDAFW 
+
+//*[@id="attachDisplayAddBaseAlert"]/div/h4
+//*[@id="attachDisplayAddBaseAlert"]/div/h4
+
+
+Linear framework
+-----------------
+1. Hard coded xpath - PropertiesFile
+2. Repetative statements - userdefined Funcitons/methods -Library.class
+3. Browser starts and closes in each testscript file - @BeforeAll @AfterAll
+
+2 Techniques
+--------------
+1. Traditional techniques
+2. PageObjectModel Techniques *****
+
+
+
+Limitations of  Traditional techniques
+--------------------------------------
+1. searching and updating locator in properties file it takes lot of time, any new functionality searching and insering new line of code in the java class takes lot of time 
+
+2. 
+
+
+PageObjectModel Techniques
+1. Searching and updating xpath(locator) and inserting line of code is an easy task
+2. chances of getting staleElement Exception is very less
+3. Chances of getting memoryleak is very less
+
+
+
+
+FDAFW- Function Driven Automation Framework
+
+clickondontchange();
+clickontodaysdeal();---Homepage
+selectcheckbox(String checkbox) ---departmentpage
+clickonfirstitem();---itemspage
+clickonfirstiteminsublist();---itemsublistpage
+clickonadd2cart();---add2cartpage
+verifysucessmsg();---sucessmsgpage
+
+
+
+1. same element in all pages
+2. memory leaks
+3. 2 advantages of POM techniques
+
+
+
+Function driven Automation framework / method driven Automation framework /Modular driven Automation framework
+
+

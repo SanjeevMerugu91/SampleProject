@@ -1,0 +1,300 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>27/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 08 15:31:14 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (489 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='annotations.OneMoreMethod.testCase1()'><b>testCase1</b><br>Test class: annotations.OneMoreMethod</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Strings are mis-matching
+	at annotations.OneMoreMethod.testCase1(OneMoreMethod.java:19)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2073621255", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2073621255'><pre>java.lang.AssertionError: The following asserts failed:
+	Strings are mis-matching
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at annotations.OneMoreMethod.testCase1(OneMoreMethod.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>annotations.OneMoreMethod@c038203</td></tr>
+<tr>
+<td title='annotations.SoftAssertExample.testCase1()'><b>testCase1</b><br>Test class: annotations.SoftAssertExample</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	comparing number of links expected [10] but found [12],
+	comparing two strings expected [Bengalooru] but found [Bangalore]
+	at annotations.SoftAssertExample.testCase1(SoftAssertExample.java:20)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace898694235", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace898694235'><pre>java.lang.AssertionError: The following asserts failed:
+	comparing number of links expected [10] but found [12],
+	comparing two strings expected [Bengalooru] but found [Bangalore]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at annotations.SoftAssertExample.testCase1(SoftAssertExample.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>annotations.SoftAssertExample@cc285f4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='annotations.Order.Deletemail()'><b>Deletemail</b><br>Test class: annotations.Order</td>
+<td></td>
+<td>0</td>
+<td>annotations.Order@6767c1fc</td></tr>
+<tr>
+<td title='annotations.Order.composemail()'><b>composemail</b><br>Test class: annotations.Order</td>
+<td></td>
+<td>0</td>
+<td>annotations.Order@6767c1fc</td></tr>
+<tr>
+<td title='annotations.Order.login()'><b>login</b><br>Test class: annotations.Order</td>
+<td></td>
+<td>0</td>
+<td>annotations.Order@6767c1fc</td></tr>
+<tr>
+<td title='annotations.HardAssertExample.testCase1()'><b>testCase1</b><br>Test class: annotations.HardAssertExample</td>
+<td></td>
+<td>0</td>
+<td>annotations.HardAssertExample@4678c730</td></tr>
+<tr>
+<td title='annotations.Annot.testCase1()'><b>testCase1</b><br>Test class: annotations.Annot</td>
+<td></td>
+<td>0</td>
+<td>annotations.Annot@39aeed2f</td></tr>
+<tr>
+<td title='annotations.ParamWithArray.testCase1()'><b>testCase1</b><br>Test class: annotations.ParamWithArray<br>Parameters: Name1, password1</td>
+<td></td>
+<td>0</td>
+<td>annotations.ParamWithArray@29ee9faa</td></tr>
+<tr>
+<td title='annotations.ParamWithArray.testCase1()'><b>testCase1</b><br>Test class: annotations.ParamWithArray<br>Parameters: Name2, password2</td>
+<td></td>
+<td>0</td>
+<td>annotations.ParamWithArray@29ee9faa</td></tr>
+<tr>
+<td title='annotations.ParamWithArray.testCase1()'><b>testCase1</b><br>Test class: annotations.ParamWithArray<br>Parameters: Name3, password3</td>
+<td></td>
+<td>0</td>
+<td>annotations.ParamWithArray@29ee9faa</td></tr>
+<tr>
+<td title='annotations.Annot.testCase2()'><b>testCase2</b><br>Test class: annotations.Annot</td>
+<td></td>
+<td>0</td>
+<td>annotations.Annot@39aeed2f</td></tr>
+<tr>
+<td title='annotations.Annot.testCase3()'><b>testCase3</b><br>Test class: annotations.Annot</td>
+<td></td>
+<td>0</td>
+<td>annotations.Annot@39aeed2f</td></tr>
+<tr>
+<td title='annotations.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: annotations.ParamWithExcel<br>Parameters: Name1, Password1</td>
+<td></td>
+<td>0</td>
+<td>annotations.ParamWithExcel@55f3ddb1</td></tr>
+<tr>
+<td title='annotations.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: annotations.ParamWithExcel<br>Parameters: Name2, Password2</td>
+<td></td>
+<td>0</td>
+<td>annotations.ParamWithExcel@55f3ddb1</td></tr>
+<tr>
+<td title='annotations.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: annotations.ParamWithExcel<br>Parameters: Name3, Password3</td>
+<td></td>
+<td>0</td>
+<td>annotations.ParamWithExcel@55f3ddb1</td></tr>
+<tr>
+<td title='annotations.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: annotations.ParamWithExcel<br>Parameters: Name4, Password4</td>
+<td></td>
+<td>0</td>
+<td>annotations.ParamWithExcel@55f3ddb1</td></tr>
+<tr>
+<td title='annotations.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: annotations.ParamWithExcel<br>Parameters: Name5, Password5</td>
+<td></td>
+<td>0</td>
+<td>annotations.ParamWithExcel@55f3ddb1</td></tr>
+<tr>
+<td title='annotations.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: annotations.ParamWithExcel<br>Parameters: Name6, Password6</td>
+<td></td>
+<td>0</td>
+<td>annotations.ParamWithExcel@55f3ddb1</td></tr>
+<tr>
+<td title='annotations.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: annotations.ParamWithExcel<br>Parameters: Name7, Password7</td>
+<td></td>
+<td>0</td>
+<td>annotations.ParamWithExcel@55f3ddb1</td></tr>
+<tr>
+<td title='annotations.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: annotations.ParamWithExcel<br>Parameters: Name8, Password8</td>
+<td></td>
+<td>0</td>
+<td>annotations.ParamWithExcel@55f3ddb1</td></tr>
+<tr>
+<td title='annotations.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: annotations.ParamWithExcel<br>Parameters: Name9, Password9</td>
+<td></td>
+<td>0</td>
+<td>annotations.ParamWithExcel@55f3ddb1</td></tr>
+<tr>
+<td title='annotations.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: annotations.ParamWithExcel<br>Parameters: Name10, Password10</td>
+<td></td>
+<td>0</td>
+<td>annotations.ParamWithExcel@55f3ddb1</td></tr>
+<tr>
+<td title='annotations.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: annotations.ParamWithExcel<br>Parameters: Name11, Password11</td>
+<td></td>
+<td>0</td>
+<td>annotations.ParamWithExcel@55f3ddb1</td></tr>
+<tr>
+<td title='annotations.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: annotations.ParamWithExcel<br>Parameters: Name12, Password12</td>
+<td></td>
+<td>0</td>
+<td>annotations.ParamWithExcel@55f3ddb1</td></tr>
+<tr>
+<td title='annotations.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: annotations.ParamWithExcel<br>Parameters: Name13, Password13</td>
+<td></td>
+<td>0</td>
+<td>annotations.ParamWithExcel@55f3ddb1</td></tr>
+<tr>
+<td title='annotations.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: annotations.ParamWithExcel<br>Parameters: Name14, Password14</td>
+<td></td>
+<td>0</td>
+<td>annotations.ParamWithExcel@55f3ddb1</td></tr>
+<tr>
+<td title='annotations.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: annotations.ParamWithExcel<br>Parameters: Name15, Password15</td>
+<td></td>
+<td>0</td>
+<td>annotations.ParamWithExcel@55f3ddb1</td></tr>
+<tr>
+<td title='annotations.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: annotations.ParamWithExcel<br>Parameters: Name16, Password16</td>
+<td></td>
+<td>0</td>
+<td>annotations.ParamWithExcel@55f3ddb1</td></tr>
+<tr>
+<td title='annotations.WorkWithExcel.workWithxl()'><b>workWithxl</b><br>Test class: annotations.WorkWithExcel</td>
+<td></td>
+<td>0</td>
+<td>annotations.WorkWithExcel@724af044</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,373 @@
+
+jdk link- https://drive.google.com/file/d/1SRylIKQR3QTmc8-h2PK3KTq-Qa6SpXB-/view?usp=share_link
+eclipse link -https://drive.google.com/file/d/1232XFEMpi0CJdjOhCg0c4COgH0xEPhsB/view?usp=share_link
+Selenium
+---------
+OpenSource
+WebApplications-AutoIT, Sikuli, Robot
+Functional and regression testing tool
+www.selenium.dev
+
+Selenium suite components
+--------------------------
+1. Selenium IDE -mozilla,chrome
+2. Selenium RC- 2tier Arch - (client-server Arch) 
+3. Selenium WebDriver****
+4. Selenium Grid -parallely 
+5. Appium
+6. Winium -Desktop
+
+Cross Browser testing tool
+
+Java,C#,PHP,javascripts,Typescripts,bluescripts...,Protractor
+
+CoreJava
+---------
+1.class and object
+2. how to interchange reference of an object
+3. Built in class in java where we can store multiDatatype elements in array-Object
+4. userdefined Functions/method
+5. static
+6. constructor/polymorphism
+7. Abstraction
+8. inheritence
+9. interface
+10. exception handling
+11. Collection APIs- ArrayList/List, HashSet/Set
+12. WorkWithExcel
+13. String method
+14. TypeCasting
+15. WorkWithproperties
+
+
+
+Junit/TestNG -TDD - Regression Testing 
+Cucumber -BDD  - Acceptence testing
+(Cucumber + junit/Testng = Regression Testing)
+
+TestNG - java unit Testing Framework
+------------------------------------------
+1.Annotations
+
+
+JDK ?
+cmd>java -version
+
+Eclipse
+
+@BeforeClass
+@BeforeMethod
+@Test
+@AfterMethod
+@AfteClass
+
+
+ASCII Ascending order 
+
+A-65
+B-66
+-
+Z-90
+
+a-97
+b-98
+-
+z-122
+
+
+
+
+Assertions- is a feature in testng to compare expvalue with actual value-->matching-pass, mis-matching-Fail
+
+
+2 types of Assertions 
+
+1. Hard Assert
+2. SoftAssert 
+
+
+CheckList
+-------------
+1. parameterization-Array,Excel...
+2. testSuite
+3. default reports in testng- HTML
+
+4. Introduction to maven...
+5. Maven+TestnG+Selenium...
+6. work with Browsers
+
+
+
+Jxls
+BufferredFile
+Apache poi jars
+
+
+step1: Associate your project with excels jars
+
+Maven- build tool
+-------------------
+1.easily jar/war can be created
+2. easily upgrade and downgrade jar version
+3. One project for both dev and testers
+
+
+
+Dependencies for testng
+
+
+
+WebDriver(I)
+ChromeDriver(c)
+FirefoxDriver(c)
+EdgeDriver(c)
+
+
+CheckList-Day2
+----------------
+1. 3 testCases for amazon.com, driver.findElement,click(),implicitWait,driver.close(),driver.quite(), testng.xml, thread-count,parallely
+2. how to take a screenshot etc...
+2a. Navigateback and forward...
+2.b. Tooltip msg...
+3. Manual xpath...
+4. javaAlert... 
+5. iframes
+6. Retrive all links
+
+Ts:Add an item to cart
+
+Tc01: Add an item to cart from menswatches
+
+OpenBrowser
+Enter url
+Login
+click on todaysdeal
+select mens watches checkbox
+click on first item in the itemspage
+click on first item inthe sublistpage
+click on add2cart button
+verifysucessmsg
+CloseBrowser
+
+
+Tc02: Add an item to cart from movie
+
+OpenBrowser
+Enter url
+Login
+click on todaysdeal
+select mens movies checkbox
+click on first item in the itemspage
+click on first item inthe sublistpage
+click on add2cart button
+verifysucessmsg
+CloseBrowser
+
+
+
+Tc03: Add an item to cart from kitchen
+
+OpenBrowser
+Enter url
+Login
+click on todaysdeal
+select mens kitchen checkbox
+click on first item in the itemspage
+click on first item inthe sublistpage
+click on add2cart button
+verifysucessmsg
+CloseBrowser
+
+
+8 locators
+-------------
+1. id -p1
+2. name -p2
+3. Css -p3
+4. xpath - Extended path -- > 100% , 95% - Address of an object in the webpage  -p4
+5. classname -95% X
+6. tagname   -95% x
+7. linktext
+8. partial linktext 
+
+
+2 types of xpaths
+
+1. Absolute xpath or complete xpath or full xpath
+/html/body/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr[3]/td[2]/table/tbody/tr/td[3]/table/tbody/tr[5]/td/table[1]/tbody/tr[1]/td/table/tbody/tr[1]/td[2]/input
+
+2. Relative xpath or short xpath
+//*[@id="loginFormContainer"]/tbody/tr[1]/td/table/tbody/tr[1]/td[2]/input
+
+
+
+2 selenium waits
+-----------------------
+1. ImplicitWait - Global time set at one place
+2. ExplicitWait
+
+
+
+Shutterbug
+
+alt 
+title
+
+Manual xpath
+------------------
+//*[@id="u_0_5_m9"]
+//*[@id="u_0_5_18"]
+//*[@id="u_0_9_tb"]
+//*[@id="u_0_5_Op"]
+//*[@id="u_0_5_F2"]
+//*[@id="u_0_5_zP"]
+
+u_0_5_m9
+u 0_5_18
+u_0_9_tb
+
+1. dynamic id associated then need to write customized xpath
+2.
+3.
+
+//tagname[@attr_name='attr_value']
+
+//input[@name='username']
+//input[@name='pwd']
+
+chropath
+
+//div[@id='navbar-collapse-header']/div/a[1]
+//div[@id='navbar-collapse-header']/div/a[2]
+
+//div[@id='navbar-collapse-header']/ul/li[3]
+//div[@id='navbar-collapse-header']/ul/li[3]/a
+//div[@id='navbar-collapse-header']/ul/li[3]/a[1]
+
+
+//tagname[text()='textvalue']
+//a[text()='Marketplace']
+
+(//a[text()='Marketplace'])[1]
+
+//a[text()="Today's Deals"]
+
+
+//*[@id="grid-main-container"]/div[2]/span[3]/ul/li[35]/label/input
+
+
+
+u_0_5_m9
+u_0_5_18
+u_0_9_tb
+
+starts-with
+contains
+
+//tagname[starts-with(@attrname,'attravaluestartswith')]
+//*[starts-with(@id,'u_0_')]
+//button[starts-with(@id,'u_0_')]
+
+
+u_0_5_m9
+c_0_5_18
+r_0_9_tb
+
+//tagname[contains(@attrname,'attr_value_contains')]
+
+
+//tagname[contains(text(),'textvaluecontains')]
+
+//a[contains(text(),'Resources')]
+
+id=
+login_0_Button_1
+login_2_Button_3
+login_3_Button_4
+
+text=Login
+//tagname[starts-with(@attrname,'attravaluestartswith')]
+//tagname[contains(@attrname,'attr_value_contains')]
+//tagname[contains(text(),'textvaluecontains')]
+
+
+//*[starts-with(@id,'login')]
+//*[contains(@id,'Button')]
+//*[contains(text(),'Login')]
+
+
+CheckList-Day3
+------------------
+1. Retrive all links...
+2. Work With webTable, Dynamic webtable,Calender...
+3. AutoSuggestElement...
+3a. Work With select object...
+4. PropertiesFile
+5. PageObjectModel -FDAFW
+6. iframes...
+
+
+//*[@id="leftcontainer"]/table/tbody/tr/td
+
+
+//*[@id="leftcontainer"]/table/tbody/tr[2]/td[1]
+//*[@id="leftcontainer"]/table/tbody/tr[3]/td[1]
+
+
+//*[@id="leftcontainer"]/table/tbody/tr[1]/td[1]
+//*[@id="leftcontainer"]/table/tbody/tr[1]/td[2]
+//*[@id="leftcontainer"]/table/tbody/tr[1]/td[3]
+
+
+//*[@id="leftcontainer"]/table/tbody/tr[14]/td[1]/a
+
+//*[@id="leftcontainer"]/table/tbody/tr[276]/td[1]
+
+//*[@id="leftcontainer"]/table/tbody/tr[290]/td[1]
+
+
+//tr[3]/td[3]
+
+//*[@id="ybar-sf"]/div[1]/div/div/ul/li/span[1]
+//*[@id="ybar-sf"]/div[1]/div/div/ul/li[9]/span[1]
+//*[@id="ybar-sf"]/div[1]/div/div/ul/li[10]/span[1]
+
+
+
+iframe - AI 
+
+Linear frame Work
+----------------------
+1. Hardcoded xpaths(Locators) - propertiesFile
+2. Repetative statements -userdefined Functions -Library.java
+3. Browser open and closes in each testScript file - @BeforeSuite, @AfterSuite
+
+
+2 techniques can be used to resolve these limitations
+
+1. Traditional technique
+2. PageObjectModel Technique
+
+
+Advantages of PageObjectModel
+----------------------------
+1. Updating xpath and inserting line of code for new functionality is an easy task.
+2.
+3.
+
+
+clickondontchange();
+clickontodaysdeal();
+selectcheckbox(String checkbox);
+clickonfirstitem();
+clickonfirstiteminsublist();
+clickonadd2cart();
+verifysucessmsg();
+
+
+
+
+
+
+
+
